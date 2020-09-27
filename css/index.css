@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+}
+  body, html {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #F3F3F3;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+#wrapper {
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 15vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1000;
+  margin: 0 0 0 0;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 650px;
+}
+h3 {
+  color: #4F4f4F;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 650px;
+}
+p {
+  color: #4F4f4F;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400px;
+}
+
+#contact-form {
+  height: 300px;
+}
+
+/*
+  #footer will contain contact information and social media links
+*/
+#footer {
+  
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  background-color: #4F4F4F;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.short-text {
+  display: none;
+}
+.full-text {
+  display: block;
+}
+
+.nav-button {
+  width: 15.75%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0px 0px 10px -5px #4F4F4F;
+  
+}
+
+a {
+  text-decoration:none;
+}
+
+.dkBlue-style {
+  background-color: #3A758C;
+}
+.ltBlue-style {
+  background-color: #62CDD9;
+}
+.yellow-style {
+  background-color: #F2D022;
+}
+.orange-style {
+  background-color: #F29E38;
+}
+.grey-style {
+  background-color: #F3F3F3;
+}
+.black-style {
+  background-color: #4F4F4F;
+}
+
+.stripe-header {
+  width: 15.75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*  
+  this class holds the 6 section grid and can have 1-4 color stripes 
+  depending on the second class
+*/
+.stripes {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+}
+.stripe-background {
+  background-color: #F3F3F3;
+  width: 18.625%;
+}
+.stripe-navbar {
+  background-color: #4F4f4F;
+  width: 18.625%;
+}
+.stripe {
+  width: 15.75%;
+}
+.dkBlue-header {
+  height: 580px;
+}
+
+.dkBlue-header img {
+  padding: 20px;
+}
+
+.arrow {
+  padding: 60px;
+}
+
+/*  
+  .container is only the color box to outline the content associated with
+  the style set by the second class
+*/
+.container {
+  display: grid;
+  padding: 30px;
+  border-radius: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*  
+  .aboutMe-container is a blank white box for about me content
+*/
+.aboutMe-container {
+  background-color: white;
+  display: grid;
+  height: 250px;
+  border-radius: 40px;
+}
+
+/*  
+  .project-container is a 2 column flex-box for project information:
+  1. project text
+  2. project image
+*/
+.project-container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/*  
+  .project-text-container is a 2 row flex-box following project information:
+  1. project title
+  2. project description
+*/
+.project-title h2 {
+  color: #4F4f4F
+}
+
+.project-title {
+  border: solid black;
+  height: 10vh;
+  width: 40vw;
+  margin: 20px;
+}
+.project-description {
+  border: solid black;
+  height: 40vh;
+  margin: 20px;
+}
+
+/*  
+  .project-image-container is just a container for the project image
+*/
+.project-image-container {
+  border: solid black;
+  background-image: url(/images/400x400.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 40px;
+  margin: 20px;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.social img {
+  padding-left: 10px;
+  height: 6vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .project-container {
+    border-radius: 20px;
+    flex-direction: column;
+    min-height: 50vh;
+    align-items: center;
+  }
+  .project-text-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-image-container {
+    height: 10vh;
+    margin: 10px;
+    width: 80vw;
+  }
+  .project-title {
+    border: solid black;
+    height: 10vh;
+    margin: 10px;
+    width: 80vw;
+  }
+  .project-description {
+    border: solid black;
+    margin: 10px;
+    height: 30vh;
+  }
+
+}
+
+@media only screen and (max-width: 1075px) {
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 100vw;
+    box-sizing: border-box;
+    top: 0;
+    background-color: #4F4F4F;
+  }
+  #footer {
+    min-height: 20vh;
+    max-height: 50vh;
+  }
+  
+  /*
+    NavBar stripes
+  */
+  .stripe-navbar {
+    width: 18.625%;
+  }
+  .nav-button {
+    width: 15.75%;
+  }
+  .social {
+    display: none;
+  }
+
+  /*
+    Header stripes
+  */
+  .stripe-header {
+    width: 15.75%;
+    padding-top: 15vh;
+  }
+  /*
+    Content stripes
+  */
+  .stripe {
+    width: 15.75%;
+  }
+  .stripe-background {
+    width: 18.625%
+  }
+
+
+  .full-text {
+    display: none;
+  }
+  .short-text {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .stripes {
+    height: 20vh;
+  }
+
+  h1 {
+    font-size: 15vw; 
+
+  }
+
+  .container {
+    padding: 2vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+
+  .aboutMe-container {
+    min-height: 20vh;
+    border-radius: 20px;
+  }
+
+  .dkBlue-header {
+    height: 50vh;
+  }
+
+}
+
+@media only screen and (min-width: 1920px) {
+  .stripe {
+    width: 300px;
+  }
+  .stripe-background {
+    width: 360px;
+  }
+  .stripe-navbar {
+    width: 360px;
+  }
+  .stripe-header {
+    width: 300px;
+  }
+
+  .nav-button {
+    width: 300px;
+    box-shadow: 0px 0px 10px #4F4F4F;
+  }
+
+  #navbar:before, #navbar:after {
+    content: "";
+    height: 100%;
+  }
+  
+  #navbar:before {
+    position: absolute;
+    width: 100vw;
+    background: #4F4f4F;
+    left: calc(-50vw + 150px);
+    z-index: -1;
+    
+  }
+  #wrapper {
+    max-width: 1920px;
+  }
+
+  h1 {
+    font-size: 300px; 
+  }
+}
