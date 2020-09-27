@@ -199,13 +199,13 @@ a {
 }
 
 .project-title {
-  border: solid black;
+  border: 0.2px dashed #4F4F4F;
   height: 10vh;
   width: 40vw;
   margin: 20px;
 }
 .project-description {
-  border: solid black;
+  border: 0.2px dashed #4F4F4F;
   height: 40vh;
   margin: 20px;
 }
@@ -214,12 +214,12 @@ a {
   .project-image-container is just a container for the project image
 */
 .project-image-container {
-  border: solid black;
+  border: 0.2px dashed #4F4F4F;
   background-image: url(/images/400x400.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 300px;
-  width: 300px;
+  height: 400px;
+  width: 100%;
   border-radius: 40px;
   margin: 20px;
 }
@@ -338,13 +338,11 @@ a {
     border-radius: 20px;
   }
   .project-title {
-    border: solid black;
     height: 10vh;
     margin: 10px;
     width: 80vw;
   }
   .project-description {
-    border: solid black;
     margin: 10px;
     height: 30vh;
   }
