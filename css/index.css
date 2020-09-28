@@ -40,6 +40,14 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400px;
 }
+.horizontal-rule {
+  margin:0;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-bottom: 3px dotted #62CDD9;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
 
 #contact-form {
   height: 300px;
@@ -69,6 +77,8 @@ p {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+
 
 .short-text {
   display: none;
@@ -166,9 +176,10 @@ a {
 .aboutMe-container {
   background-color: white;
   display: grid;
-  height: 250px;
+  height: 100%;
   border-radius: 20px;
 }
+
 .aboutMe-title {
   color: #4F4F4F;
   font-size: 2.3em;
@@ -177,7 +188,7 @@ a {
   margin-top: 20px;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .aboutMe-title span {
@@ -194,8 +205,9 @@ p.aboutMe-description {
   text-align: left;
   padding-left: 50px;
   padding-right: 50px;
+  padding-bottom: 20px;
   margin: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /*  
