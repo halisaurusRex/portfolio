@@ -118,6 +118,42 @@ a {
   text-decoration:none;
 }
 
+.case-study-link {
+  font-size: 1.5em;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  color: #F3F3F3;
+  background-color: #3A758C;
+  padding: 3px 10px;
+}
+
+.case-study-link-wrapper {
+  text-align: right;
+  padding-bottom: 20px;
+  padding-right: 40px;
+
+}
+
+.case-study-link a:link {
+  color: #F3F3F3;
+}
+
+/* visited link */
+.case-study-link a:visited {
+  color: #F3F3F3;
+}
+
+/* mouse over link */
+.case-study-link a:hover {
+  color: #3A758C;
+  font-weight: bold;
+}
+
+/* selected link */
+.case-study-link a:active {
+  color: #3A758C;
+}
+
 .dkBlue-style {
   background-color: #3A758C;
 }
@@ -258,7 +294,6 @@ p.aboutMe-description {
 
 .project-title {
   height: 10vh;
-  width: 40vw;
   margin: 20px;
   color: #4F4F4F;
   font-size: 2.3em;
@@ -266,6 +301,27 @@ p.aboutMe-description {
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
 }
+.project-title a:link {
+  color: #4F4f4F;
+}
+
+/* visited link */
+.project-title a:visited {
+  color: #4F4f4F;
+}
+
+/* mouse over link */
+.project-title a:hover {
+  color: #3A758C;
+  text-decoration: underline dotted #62CDD9; 
+}
+
+/* selected link */
+.project-title a:active {
+  color: #4F4f4F;
+}
+
+
 
 .tiny-header {
   font-size: 0.5em;
@@ -282,7 +338,7 @@ p.aboutMe-description {
   text-align: left;
   padding-left: 50px;
   padding-right: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   margin: 0;
   font-family: 'Quicksand', sans-serif;
 }
@@ -296,7 +352,7 @@ p.aboutMe-description {
   background-repeat: no-repeat;
   background-size: contain;
   height: 400px;
-  width: 100%;
+  width: 50%;
   margin: 20px;
 }
 
@@ -324,7 +380,7 @@ p.aboutMe-description {
   3. Social Media
 */
 .footer-box {
-  border: 5px dotted #3A758C;
+  border: 5px dotted #62CDD9;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -338,20 +394,6 @@ p.aboutMe-description {
   color: #4F4f4F;
 }
 
-.footer-box-center {
-  border: 0.2px dashed  #62CDD9;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #62CDD9;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  color: #3A758C;
-}
-
-.footer-box-left {
-  
-}
-
 .social {
   display: flex;
   flex-direction: row;
@@ -363,7 +405,6 @@ p.aboutMe-description {
   padding-left: 10px;
   height: 6vh;
 }
-
 
 
 .aboutMe-letter-animation:hover {
@@ -414,6 +455,19 @@ p.aboutMe-description {
   opacity: 0;
 }
 
+.case-study-link:visited {
+  color: #F3F3F3;
+  background-color: #3A758C;
+}
+
+.case-study-link:hover {
+  background-color:#F3F3F3;
+  color: #3A758C;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #3A758C;
+}
+
 @keyframes fill {
   0% {
     width: 0%;
@@ -432,7 +486,7 @@ p.aboutMe-description {
     background: #4F4f4F;
   }
   100% {
-     width: 100%;
+    width: 100%;
     height: 100%;
     background: #4F4f4F;
   }
@@ -457,6 +511,23 @@ p.aboutMe-description {
 }
 
 @media only screen and (max-width: 800px) {
+
+  .case-study-link {
+    font-size: 1em;
+    border-radius: 5px;
+    font-family: 'Quicksand', sans-serif;
+    color: #F3F3F3;
+    background-color: #3A758C;
+    padding: 3px 10px;
+  }
+  
+  .case-study-link-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  
+  }
+  
   .project-container {
     border-radius: 10px;
     flex-direction: column;
@@ -488,47 +559,38 @@ p.aboutMe-description {
     padding-left: 20px;
     padding-bottom: 10px;
   }
-  
   .project-text-container {
     width: 100%;
   }
-
   .project-description {
     margin: 10px;
-    height: 30vh;
   }
-
   .project-description p {
     font-size: 14pt;
     padding-left: 5px;
     padding-right: 5px;
     text-align: justify;
   }
-
   .container {
     border-radius: 20px;
   }
   .aboutMe-container {
     border-radius: 10px;
   }
-
   .aboutMe-title {
     font-size: 24px;
     text-align: left;
     padding-left: 20px;
   }
-
   p.aboutMe-description {
     font-size: 16pt;
     padding-left: 20px;
     padding-right: 20px;
   }
-
   .horizontal-rule {
     margin-left: 20px;
     margin-right: 20px;
   }
-
   .footer-box {
     border: 5px dotted #3A758C;
     display: flex;
@@ -538,12 +600,10 @@ p.aboutMe-description {
     padding: 20px;
     border-radius: 50px;
   }
-
   .footer-box-center {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-
 
 }
 
@@ -624,6 +684,18 @@ p.aboutMe-description {
 
   .dkBlue-header {
     height: 50vh;
+  }
+  .project-description p {
+    font-size: 14pt;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+  }
+
+  .project-title {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 0px;
   }
 
 }
