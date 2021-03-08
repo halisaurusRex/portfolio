@@ -263,8 +263,8 @@ p.aboutMe-description {
   color: #4F4F4F;
   font-size: 2.3em;
   text-align: center;
-  font-weight: 600px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .tiny-header {
@@ -294,10 +294,9 @@ p.aboutMe-description {
   border: 0.2px dashed #4F4F4F;
   background-image: url(/images/400x400.gif);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 400px;
   width: 100%;
-  border-radius: 15px;
   margin: 20px;
 }
 
@@ -468,21 +467,44 @@ p.aboutMe-description {
     display: flex;
     flex-direction: column;
   }
+  .tiny-header {
+    font-size: 0.5em;
+    margin-top:0;
+  }
   .project-image-container {
-    height: 10vh;
+    height: 250px;
     margin: 10px;
-    width: 80vw;
+    width: 400px;
     border-radius: 20px;
+    background-size: contain;
+    border-radius: 0px;
   }
   .project-title {
-    height: 10vh;
+    height: 5vh;
     margin: 10px;
     width: 80vw;
+    font-size: 24px;
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 10px;
   }
+  
+  .project-text-container {
+    width: 100%;
+  }
+
   .project-description {
     margin: 10px;
     height: 30vh;
   }
+
+  .project-description p {
+    font-size: 14pt;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: justify;
+  }
+
   .container {
     border-radius: 20px;
   }
@@ -505,6 +527,21 @@ p.aboutMe-description {
   .horizontal-rule {
     margin-left: 20px;
     margin-right: 20px;
+  }
+
+  .footer-box {
+    border: 5px dotted #3A758C;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50px;
+  }
+
+  .footer-box-center {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 
@@ -534,9 +571,7 @@ p.aboutMe-description {
   .nav-button {
     width: 15.75%;
   }
-  .social {
-    display: none;
-  }
+
 
   /*
     Header stripes
