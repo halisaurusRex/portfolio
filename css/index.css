@@ -58,7 +58,25 @@ p {
   #footer will contain contact information and social media links
 */
 #footer {
-  
+  background-color: #4F4F4F;
+  height: 200px;
+  padding-left: 100px;
+  padding-top: 20px;
+  padding-right: 100px;
+}
+
+#footer p {
+  text-align: left;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+#footer h2 {
+  text-align: left;
+  color: white;
+  padding: 0;
+  margin:0;
 }
 
 #navbar {
@@ -229,6 +247,7 @@ p.aboutMe-description {
 .project-text-container {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 /*  
@@ -236,20 +255,37 @@ p.aboutMe-description {
   1. project title
   2. project description
 */
-.project-title h2 {
-  color: #4F4f4F
-}
+
 
 .project-title {
-  border: 0.2px dashed #4F4F4F;
   height: 10vh;
   width: 40vw;
   margin: 20px;
+  color: #4F4F4F;
+  font-size: 2.3em;
+  text-align: center;
+  font-weight: 600px;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+.tiny-header {
+  font-size: 0.5em;
+  margin-bottom:0;
+}
+
 .project-description {
-  border: 0.2px dashed #4F4F4F;
-  height: 40vh;
-  margin: 20px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.project-description p {
+  color: #4F4F4F;
+  font-size: 26px;
+  text-align: left;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /*  
@@ -262,8 +298,53 @@ p.aboutMe-description {
   background-size: cover;
   height: 400px;
   width: 100%;
-  border-radius: 40px;
+  border-radius: 15px;
   margin: 20px;
+}
+
+.project-1 {
+  border: none;
+  background-image: url(/images/aib_cover-image.jpg);
+}
+
+.project-2 {
+  border: none;
+  background-image: url(/images/nsa-cover-image.png);
+}
+
+.project-3 {
+  border: none;
+  background-image: url(/images/afka-cover-image.jpg);
+}
+
+
+
+/*  
+  .footer-box is a 3 column flex-box containing contact information
+  1. Name & Address
+  2. Resume Link
+  3. Social Media
+*/
+.footer-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-box-center {
+  border: 0.2px dashed  #62CDD9;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #62CDD9;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  color: #3A758C;
+}
+
+.footer-box-left {
+
 }
 
 .social {
@@ -271,13 +352,14 @@ p.aboutMe-description {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  padding-right: 50px;
 }
 
 .social img {
   padding-left: 10px;
   height: 6vh;
 }
+
+
 
 .aboutMe-letter-animation:hover {
   animation-name: letter-bounce;
