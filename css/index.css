@@ -41,6 +41,26 @@ p {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400px;
 }
+
+a:link {
+  color: #4F4f4F;
+}
+
+/* visited link */
+a:visited {
+  color: #4F4f4F;
+}
+
+/* mouse over link */
+a:hover {
+  color: #3A758C;
+  text-decoration: underline dotted #62CDD9; 
+}
+
+/* selected link */
+a:active {
+  color: #4F4f4F;
+}
 .horizontal-rule {
   margin:0;
   margin-left: 50px;
@@ -147,6 +167,7 @@ a {
 .case-study-link a:hover {
   color: #3A758C;
   font-weight: bold;
+  text-decoration:none;
 }
 
 /* selected link */
@@ -392,6 +413,15 @@ p.aboutMe-description {
 
 .footer-box-left p {
   color: #4F4f4F;
+}
+
+.case-study-link {
+  font-size: 1.5em;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  color: #F3F3F3;
+  background-color: #3A758C;
+  padding: 3px 10px;
 }
 
 .social {
