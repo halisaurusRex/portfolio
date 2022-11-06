@@ -71,7 +71,7 @@ a:active {
 }
 
 #contact-form {
-  height: 300px;
+  height: 100px;
 }
 
 /*
@@ -139,16 +139,17 @@ a {
 }
 
 .case-study-link {
-  font-size: 1.5em;
+  font-size: 12px;
   border-radius: 5px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #F3F3F3;
   background-color: #3A758C;
-  padding: 3px 10px;
+  padding: 10px 10px;
+  font-weight: 300;
 }
 
 .case-study-link-wrapper {
-  text-align: right;
+  text-align: center;
   padding-bottom: 20px;
   padding-right: 40px;
 
@@ -166,7 +167,7 @@ a {
 /* mouse over link */
 .case-study-link a:hover {
   color: #3A758C;
-  font-weight: bold;
+  font-weight: 300;
   text-decoration:none;
 }
 
@@ -209,7 +210,7 @@ a {
 .stripes {
   display: flex;
   flex-direction: row;
-  height: 300px;
+  height: 150px;
 }
 .stripe-background {
   background-color: #F3F3F3;
@@ -223,7 +224,7 @@ a {
   width: 15.75%;
 }
 .dkBlue-header {
-  height: 580px;
+  height: 150px;
 }
 
 .dkBlue-header img {
@@ -258,13 +259,13 @@ a {
 
 .aboutMe-title {
   color: #4F4F4F;
-  font-size: 2.3em;
+  font-size: 2.1em;
   text-align: left;
   padding-left: 50px;
   margin-top: 20px;
   margin-bottom: 0px;
   padding-bottom: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .aboutMe-title span {
@@ -283,9 +284,20 @@ p.aboutMe-description {
   padding-right: 50px;
   padding-bottom: 20px;
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
+ul.aboutMe-description {
+  color: #7d7d7d;
+  font-size: 26px;
+  text-align: left;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
 /*  
   .project-container is a 2 column flex-box for project information:
   1. project text
@@ -303,7 +315,7 @@ p.aboutMe-description {
 .project-text-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
 }
 
 /*  
@@ -316,11 +328,12 @@ p.aboutMe-description {
 .project-title {
   height: 10vh;
   margin: 20px;
+  padding-right:50px;
   color: #4F4F4F;
-  font-size: 2.3em;
+  font-size: 2.0em;
   text-align: center;
   font-weight: bold;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 .project-title a:link {
   color: #4F4f4F;
@@ -350,18 +363,19 @@ p.aboutMe-description {
 }
 
 .project-description {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .project-description p {
   color: #4F4F4F;
-  font-size: 26px;
+  font-size: 20px;
   text-align: left;
-  padding-left: 50px;
+  padding-left: 0px;
   padding-right: 50px;
   padding-bottom: 0px;
-  margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
 }
 
 /*  
@@ -371,10 +385,11 @@ p.aboutMe-description {
   border: 0.2px dashed #4F4F4F;
   background-image: url(/images/400x400.gif);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 400px;
-  width: 50%;
-  margin: 20px;
+  background-size:cover;
+  height: 200px;
+  width: 40%;
+  margin: 50px;
+  border-radius: 5px;
 }
 
 .project-1 {
@@ -418,7 +433,7 @@ p.aboutMe-description {
 .case-study-link {
   font-size: 1.5em;
   border-radius: 5px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #F3F3F3;
   background-color: #3A758C;
   padding: 3px 10px;
@@ -545,7 +560,7 @@ p.aboutMe-description {
   .case-study-link {
     font-size: 1em;
     border-radius: 5px;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
     color: #F3F3F3;
     background-color: #3A758C;
     padding: 3px 10px;
@@ -614,6 +629,12 @@ p.aboutMe-description {
   }
   p.aboutMe-description {
     font-size: 16pt;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul.aboutMe-description {
+    font-size: 14pt;
+    margin-left: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -713,7 +734,7 @@ p.aboutMe-description {
   }
 
   .dkBlue-header {
-    height: 50vh;
+    height: 20vh;
   }
   .project-description p {
     font-size: 14pt;
