@@ -327,7 +327,9 @@ ul.aboutMe-description {
 
 .project-title {
   height: 10vh;
-  margin: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
   padding-right:50px;
   color: #4F4F4F;
   font-size: 2.0em;
@@ -371,6 +373,7 @@ ul.aboutMe-description {
   font-size: 20px;
   text-align: left;
   padding-left: 0px;
+  margin-top: 5px;
   padding-right: 50px;
   padding-bottom: 0px;
   margin-bottom: 20px;
