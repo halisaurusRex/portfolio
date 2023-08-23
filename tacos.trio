@@ -1,0 +1,9 @@
+src: 
+    () => do
+
+    this: read(this)
+    this.each (do =>
+    "I love tacos"
+
+    end)
+
